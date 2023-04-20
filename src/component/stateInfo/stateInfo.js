@@ -5,23 +5,24 @@ import axios from 'axios';
 
 
 function StateInfo( {} ){
-    const [states, setStates] = useState([]);
+    const [returnedState, setStates] = useState([]);
 
     useEffect(() => {
         const loadStates = async () => {
             try {
                 const apiResponse = await axios.get('http://localhost:8000/api/v1/states')
-                // console.log(apiResponse.data[0].array.map(element => element.name));
-                setStates((states) => [apiResponse.data[0]]);
+                // const test = apiResponse.data[0].states.map(element => element.name);
+                // console.log(test);
+                setStates(apiResponse.data[0].states);            
             }
             catch (error) {
                 console.log("Error :(");
             }
         };
-    
-        // set isload to true
+
         loadStates();
     }, []);
+    // console.log(returnedState.map(element => (element.name)));
 
       
     return(
@@ -34,7 +35,7 @@ function StateInfo( {} ){
         //     </div>
         // </div>
         <div className="row">
-        {states.map(state => (
+        {returnedState.map(state => (
             <div key={state._id} className="col-sm-6 col-md-4 col-lg-3 mb-3">
             <div className="card">
                 <img src={state.image} className="card-img-top" alt={state.name} />
