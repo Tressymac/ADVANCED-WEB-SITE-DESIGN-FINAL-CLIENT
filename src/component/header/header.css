@@ -3,3 +3,16 @@
     position: relative;
     left: 50%;
 }
+
+.navbar{
+    --bs-navbar-color: rgb(255 254 254 / 77%);
+    --bs-navbar-hover-color: rgb(233 195 195 / 70%);
+    --bs-navbar-disabled-color: rgba(255, 255, 255, 0.3);
+    --bs-navbar-active-color: rgba(253, 253, 253, 0.9);
+    --bs-navbar-brand-color: rgb(255 255 255 / 90%);
+    --bs-navbar-brand-hover-color: rgba(195, 174, 235, 0.9);
+}
+
+.navbar-toggler-icon{
+    background-color: azure;
+}

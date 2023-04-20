@@ -1,29 +1,28 @@
 import { Link as RouterLink } from 'react-router-dom'
 import '../header/header.css'
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 function Header( {logo} ){
     return(
-        <header className='App-header'>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <a className="navbar-brand" href="#">Sates Information</a>
-                    <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li className="nav-item active">
-                            <a className="nav-link" href="/states">Home</a>
-                        </li>
-                        <li className="nav-item active">
-                            <a className="nav-link" href="/states/map">US Map</a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="/states/quiz">Take Quiz</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+        <Navbar bg="dark" expand="lg">
+            <Container>
+                <Navbar.Brand href="#home">Sates Information</Navbar.Brand>
+                <Navbar.Toggle aria-controls="Hamburger navbar Menu" />
+                <Navbar.Collapse id="basic-navbar-nav">
+                <Nav className="me-auto">
+                    <Nav.Link href="/states">Home</Nav.Link>
+                    <NavDropdown title="Dropdown" id="basic-nav-dropdown">
+                    <NavDropdown.Item href="/states/map">US Map</NavDropdown.Item>
+                    <NavDropdown.Divider />
+                    <NavDropdown.Item href="/states/quiz">Quick Quiz</NavDropdown.Item>
+                    </NavDropdown>
+                </Nav>
+                </Navbar.Collapse>
+            </Container>
+        </Navbar>
     )
 }
 
