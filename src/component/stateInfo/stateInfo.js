@@ -31,8 +31,8 @@ function StateInfo( {} ){
                 <img src={state.image} className="card-img-top" alt={state.name} />
                 <div className="card-body">
                     <h5 className="card-title">{state.name}</h5>
-                    <p className="card-text">{state.nickname}</p>
-                    <a href="#" className="btn btn-primary">Learn More</a>
+                    <p className="card-text"><em>{state.nickname}</em></p>
+                    <a href={`states/${state.name}`} className="btn btn-primary stateButton">Learn More</a>
                 </div>
             </div>
             </div>

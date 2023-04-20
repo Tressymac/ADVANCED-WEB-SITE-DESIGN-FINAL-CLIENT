@@ -1,10 +1,13 @@
 .stateContainer{
-    background-color: #7a5574;
+    background-color: #918cb9;
     margin: 5%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    border-radius: 25px;
+    border: solid 2px rgb(85, 59, 85);
 }
 
 .card{
@@ -19,6 +22,17 @@
     --bs-card-bg: #969aa1;
 }
 
+.cardItem{
+    border: #4f3d6b solid 2px;
+    border-right:  #4f3d6b solid 7px;
+    border-bottom:  #4f3d6b solid 5px;
+    border-radius: 9.5px;
+}
+
 .boxStates{
     margin: 3%;
+}
+
+.stateButton{
+    --bs-btn-bg: #3b6bb1;
 }
