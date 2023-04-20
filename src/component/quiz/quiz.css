@@ -1,0 +1,17 @@
+.quiz{
+    margin: 5%;
+    text-align: center;
+}
+
+.accordion-item {
+    color: #000000;
+    background-color: #94789f;
+}
+
+.accordion {
+    --bs-accordion-color: #000000;
+    --bs-accordion-bg: #bb86c1;
+    --bs-accordion-border-color: #000000;
+    --bs-accordion-active-color: #123f81;
+    --bs-accordion-active-bg: #d6aedd;
+}

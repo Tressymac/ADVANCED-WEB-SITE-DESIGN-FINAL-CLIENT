@@ -8,6 +8,7 @@ import StateInfo from './component/stateInfo/stateInfo';
 import HomeInfo from './component/home/homeInfo';
 import UsMap from './component/map/map';
 import StateDits from './component/stateInfo/getStatesDits';
+import StateQuiz from './component/quiz/quiz';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path='/states' element={<StateInfo />} />
           <Route path='/states/map' element={<UsMap />} />
           <Route path='/states/:name' element={<StateDits />} />
+          <Route path='/states/quiz' element={<StateQuiz />} />
         </Routes>
       </BrowserRouter>
       
