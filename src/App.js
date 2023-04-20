@@ -7,6 +7,7 @@ import Footer from './component/footer/footer';
 import StateInfo from './component/stateInfo/stateInfo';
 import HomeInfo from './component/home/homeInfo';
 import UsMap from './component/map/map';
+import StateDits from './component/stateInfo/getStatesDits';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Routes>
           <Route path='/states' element={<StateInfo />} />
           <Route path='/states/map' element={<UsMap />} />
+          <Route path='/states/:name' element={<StateDits />} />
         </Routes>
       </BrowserRouter>
       
