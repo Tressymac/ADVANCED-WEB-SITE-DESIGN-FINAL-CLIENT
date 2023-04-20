@@ -49,14 +49,6 @@
   font-weight: bold;
 }
   
-  /* .state-container .state-info .state-symbols {
-  margin-top: 10px;
-  } */
-  
-  /* .state-container .state-info .state-symbols h3 {
-  margin-bottom: 5px;
-  } */
-  
-  /* .state-container .state-info .state-symbols .symbol-label {
+.state-container .state-info .state-symbols .symbol-label {
   font-weight: bold;
-  } */
+}

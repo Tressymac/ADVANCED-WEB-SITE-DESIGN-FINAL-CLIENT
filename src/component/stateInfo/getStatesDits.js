@@ -11,13 +11,13 @@ function MyVerticallyCenteredModal(props) {
     // console.log(data)
 
     return (
-      <Modal {...props} size="lg" aria-labelledby="Fun Fact About The Selected State" centered>
+      <Modal {...props} size="md" aria-labelledby="Fun Fact About The Selected State" centered>
         <Modal.Header closeButton>
           <Modal.Title id="Fun Fact"> Fun Fact For {data.name}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <p>
-            {data.name}
+            {data.funfact}
           </p>
         </Modal.Body>
         <Modal.Footer>
@@ -57,13 +57,16 @@ function StateDits( {} ){
                 <p className="state-nickname">{returnedState.nickname}</p>
             </div>
             <div className="state-info">
-                <h2 className="state-name">More Info</h2>
+                <h2 className="state-name stateInfoTitle">More Info</h2>
                 <p><span className="label">Capital:</span> {returnedState.capital}</p>
                 <p><span className="label">Date of Statehood:</span> {returnedState.date_of_statehood}</p>
                 <p><span className="label">Population:</span> {returnedState.population} Million People</p>
                 <p><span className="label">Motto:</span> "{returnedState.motto}"</p>
+                <p><span className="label">Land Mass:</span> {returnedState.landmass}</p>
+                <p><span className="label">Major Industry:</span> {returnedState.majorIndustry}</p>
+                <p><span className="label">Tourist Attractions:</span> {returnedState.Touristattractions}</p>
                 <div className="state-symbols">
-                <h3>Symbols:</h3>
+                <h3 className='stateInfoTitle'>Symbols:</h3>
                 {returnedState.symbols && returnedState.symbols.map((symbol, index) => (
                     <p key={index}><span className="symbol-label">{symbol.name}:</span> {symbol.value}</p>
                 ))}
