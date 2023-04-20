@@ -12,10 +12,13 @@ function Header( {logo} ){
                     <a className="navbar-brand" href="#">Sates Information</a>
                     <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li className="nav-item active">
-                            <a className="nav-link" href="#">Home</a>
+                            <a className="nav-link" href="/states">Home</a>
+                        </li>
+                        <li className="nav-item active">
+                            <a className="nav-link" href="/states/map">US Map</a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link" href="#">Take Quiz</a>
+                            <a className="nav-link" href="/states/quiz">Take Quiz</a>
                         </li>
                     </ul>
                     <form className="form-inline my-2 my-lg-0">
