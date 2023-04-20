@@ -5,7 +5,7 @@ function Footer( {logo} ){
     return(
         <div className="card">
             <div className="card-header">
-                Thank you for view my webpage
+                Thank you for viewing my webpage
             </div>
             <div className="card-body">
                 <h5 className="card-title">This Page was created by Tressica Mac @ 2023</h5>
