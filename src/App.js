@@ -6,6 +6,7 @@ import Header from './component/header/headers';
 import Footer from './component/footer/footer';
 import StateInfo from './component/stateInfo/stateInfo';
 import HomeInfo from './component/home/homeInfo';
+import UsMap from './component/map/map';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <HomeInfo />
         <Routes>
           <Route path='/states' element={<StateInfo />} />
+          <Route path='/states/map' element={<UsMap />} />
         </Routes>
       </BrowserRouter>
       
