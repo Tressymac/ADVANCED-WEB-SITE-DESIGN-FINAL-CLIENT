@@ -3,10 +3,10 @@ import '../home/homeInfo.css'
 
 function HomeInfo( {} ){
     return(
-        <div class="jumbotron jumbotron-fluid jumbotronBox">
-            <div class="container">
-                <h1 class="display-4">States In the USA</h1>
-                <p class="lead">
+        <div className="jumbotron jumbotron-fluid jumbotronBox">
+            <div className="container">
+                <h1 className="display-4">States In the USA</h1>
+                <p className="lead">
                     The United States is the third largest country in the world by land area, 
                     covering approximately 9.8 million square kilometers (3.8 million square miles).
                     <br></br>

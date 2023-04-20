@@ -63,8 +63,8 @@ function StateDits( {} ){
                 <p><span className="label">Population:</span> {returnedState.population} Million People</p>
                 <p><span className="label">Motto:</span> "{returnedState.motto}"</p>
                 <p><span className="label">Land Mass:</span> {returnedState.landmass}</p>
-                <p><span className="label">Major Industry:</span> {returnedState.majorIndustry}</p>
-                <p><span className="label">Tourist Attractions:</span> {returnedState.Touristattractions}</p>
+                <p><span className="label">Major Industry:</span> {returnedState.majorindustry}</p>
+                <p><span className="label">Tourist Attractions:</span> {returnedState.touristattractions}</p>
                 <div className="state-symbols">
                 <h3 className='stateInfoTitle'>Symbols:</h3>
                 {returnedState.symbols && returnedState.symbols.map((symbol, index) => (

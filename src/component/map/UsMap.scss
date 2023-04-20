@@ -4,13 +4,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 5%;
+    margin-top: 5%;
+    margin-bottom: 5%;
     flex-direction: column;
+    overflow: hidden;
+
 }
 
 .us-map-image {
     width: 60%;
     height: 100%;
     object-fit: contain;
+    overflow: hidden;
 }
   
