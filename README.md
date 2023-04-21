@@ -1,70 +1,16 @@
-# Getting Started with Create React App
+# Program Information
+The program is designed to provide users with information about all 50 US states, including state Capital, Date of Statehood, Population, Motto, flag, Land Mass, Major Industry, Tourist Attractions, and Symbols. This program is accessible via a web page that is designed to be responsive across multiple devices.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Web Page Development
 
-## Available Scripts
+To develop the web page, the developer utilized LESS to define the main colors used throughout the site, allowing for easy color updates from a central location. Additionally, SCSS was used for the map component, enabling cleaner and more modular code with features like nested styles and variables. Media queries were incorporated to adjust the layout of the page based on screen size, providing optimal viewing on various devices. A hamburger menu was also included for easy navigation on mobile devices using Bootstrap Navigation.
 
-In the project directory, you can run:
+### Design Elements
 
-### `npm start`
+Bootstrap components were utilized for a cohesive and visually appealing layout. Bootstrap Card was used for each state item, providing a small and unified state. Bootstrap Jumbotron was used to make the heading of the webpage larger and more prominent. Bootstrap Accordion was used for the quiz, providing an engaging way to present questions to users.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Accessibility Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+To ensure the web page is accessible to a wide range of users, images were given proper alt titles, and semantic tags were used for content. These features enable users with assistive technology, such as screen readers, to easily understand the content.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Overall, the program provides users with a wealth of information about each US state in an accessible and visually engaging manner.
