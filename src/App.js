@@ -13,14 +13,14 @@ import StateQuiz from './component/quiz/quiz';
 function App() {
   return (
     <div className="mainContainer">
-      <BrowserRouter basename="/">
+      <BrowserRouter basename="/states">
       <Header />
       <HomeInfo />
         <Routes>
-          <Route path='/states' element={<StateInfo />} />
-          <Route path='/states/map' element={<UsMap />} />
-          <Route path='/states/:name' element={<StateDits />} />
-          <Route path='/states/quiz' element={<StateQuiz />} />
+          <Route path='/' element={<StateInfo />} />
+          <Route path='/map' element={<UsMap />} />
+          <Route path='/:name' element={<StateDits />} />
+          <Route path='/quiz' element={<StateQuiz />} />
         </Routes>
       </BrowserRouter>
       
