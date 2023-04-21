@@ -36,7 +36,7 @@ function StateDits( {} ){
     useEffect(() => {
         const loadStates = async () => {
             try {
-                const apiResponse = await axios.get(`http://localhost:8000/api/v1/states/${name}`)
+                const apiResponse = await axios.get(`https://adv-web-us-state-final-500.uc.r.appspot.com/api/v1/states/${name}`)
                 // const test = apiResponse.data;
                 // console.log(test.name);
                 setStates(apiResponse.data); 

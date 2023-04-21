@@ -9,7 +9,7 @@ function StateInfo( {} ){
     useEffect(() => {
         const loadStates = async () => {
             try {
-                const apiResponse = await axios.get('http://localhost:8000/api/v1/states')
+                const apiResponse = await axios.get('https://adv-web-us-state-final-500.uc.r.appspot.com/api/v1/states')
                 // const test = apiResponse.data[0].states.map(element => element.name);
                 // console.log(test);
                 setStates(apiResponse.data[0].states);            
